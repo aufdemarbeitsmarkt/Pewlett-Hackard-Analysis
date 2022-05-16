@@ -74,5 +74,9 @@ LEFT JOIN dept_emp AS de ON de.emp_no = ce.emp_no
 GROUP BY de.dept_no
 ORDER BY de.dept_no;
 
+-- review the new `current_emp_count` table
+SELECT 
+	 *
+FROM current_emp_count;
 
 

@@ -51,3 +51,28 @@ ORDER BY COUNT(ut.emp_no) DESC;
 SELECT 
 	 * 
 FROM retiring_titles;
+
+-- create `mentorship_eligibility`table
+-- this table holds the employees who are eligible to participate in a mentorship program
+SELECT 
+	 DISTINCT ON (e.emp_no) e.emp_no,
+	 e.first_name,
+	 e.last_name,
+	 e.birth_date,
+	 de.from_date,
+	 de.to_date,
+	 t.title
+INTO mentorship_eligibility 
+FROM employees AS e
+INNER JOIN dept_emp AS de ON de.emp_no = e.emp_no
+INNER JOIN titles AS t ON t.emp_no = e.emp_no
+WHERE de.to_date = '9999-01-01'
+  AND e.birth_date >= '1965-01-01'
+  AND e.birth_date <= '1965-12-31'
+ORDER BY e.emp_no;
+
+-- review the new `mentorship_eligibility` table
+SELECT 
+	 *
+FROM mentorship_eligibility
+LIMIT 10;
