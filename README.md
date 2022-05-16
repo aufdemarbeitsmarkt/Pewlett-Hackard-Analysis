@@ -16,7 +16,7 @@ Results:
 * Conversely, the number of Managers retiring is 2. Compared to the 9 total Managers at Pewlett Hackard, this hints that there will still be a healthy management culture after the large-scale retirement event. 
 
 ##### Retiring Titles Data
-![retiring_titles](Analysis Projects Folder/Pewlett-Hackard-Analysis Folder/Data/screenshots/retiring_titles.png)
+![retiring_titles](screenshots/retiring_titles.png)
 
 * There are 1549 employees eligible for the Mentorship Program; their information can be found in 'Data/mentorship_eligibility.csv'
 
@@ -34,7 +34,7 @@ There are 1549 employees eligible for the Mentorship Program. This is just over 
 It is a good sign that 708 of those eligible for the Mentorship Program are Senior-level employees, however, swift action will be needed to ensure that training for the next generation of employees occurs soon! 
 
 ##### Mentorship Eligibility Counts
-![mentorship_eligibility_counts](Analysis Projects Folder/Pewlett-Hackard-Analysis Folder/Data/screenshots/mentorship_eligibility_counts.png)
+![mentorship_eligibility_counts](screenshots/mentorship_eligibility_counts.png)
 
 
 
